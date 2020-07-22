@@ -20,6 +20,10 @@ namespace PackerTracker.Models
     {
       return _items;
     }
+    public static void ClearAll()
+    {
+      _items.Clear();
+    }
 
   }
 }

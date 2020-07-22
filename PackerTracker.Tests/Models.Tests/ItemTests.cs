@@ -1,12 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PackerTracker.Models;
+using System;
 using System.Collections.Generic;
 
 namespace PackerTracker.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class ItemTests : IDisposable
   {
+    public void Dispose()
+    {
+      Item.ClearAll();
+    }
     // Test methods go here
     [TestMethod]
     public void ItemConstructor_ReturnAnItemObject_Item()
