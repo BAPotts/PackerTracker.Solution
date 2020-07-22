@@ -8,9 +8,9 @@ namespace PackerTracker.Models
 
     public Item(string name, int weight, bool packed)
     {
-      Name = "";
-      Weight = 0;
-      Packed = false;
+      Name = name;
+      Weight = weight;
+      Packed = packed;
     }
 
   }
