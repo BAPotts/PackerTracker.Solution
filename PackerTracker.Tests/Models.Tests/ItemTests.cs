@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PackerTracker.Models;
+using System.Collections.Generic;
 
 namespace PackerTracker.Tests
 {
@@ -22,5 +23,26 @@ namespace PackerTracker.Tests
       Assert.AreEqual(5, newItem.Weight);
       Assert.AreEqual(true, newItem.Packed);
     }
+
+    [TestMethod]
+    public void GetAll_AddsItemtoList_List()
+    { 
+      List<Item> _items = new List<Item> {};
+      List<Item> result = Item.GetAll();
+      // Item newItem = new Item("Tent", 5, true);
+      CollectionAssert.AreEqual(_items, result);
+    }
   }
 }
+
+// public void GetAll_ReturnsEmptyList_ItemList()
+// {
+//   // Arrange
+//   List<Item> newList = new List<Item> { };
+
+//   // Act
+//   List<Item> result = Item.GetAll();
+
+//   // Assert
+//   CollectionAssert.AreEqual(newList, result);
+// }
