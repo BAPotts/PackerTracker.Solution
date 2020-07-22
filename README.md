@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Packer Tracker_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Organize your packing, July 22, 2020_
 
-#### By _**Ben White**_
+#### By _**Ben White, Kevin Davis & Beverly Potts**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_A program for users to catalog things they need for upcoming camping, backpacking, bike touring, road trips, or other types of travel._
 
 ## Setup/Installation Requirements
 
@@ -32,7 +32,11 @@ Software Requirements:
 
 Behavior|Input|Output
 ------|------|------
-| |
+This program will display the name of an object|Tent|Object: Tent
+This program will display the weight of an object|Tent|Weight: 5pds
+The Program will display whether the object has been packed or not|Tent|Not Packed
+This program will allow the user to add things to a list|Sleeping Bag|Things to pack: Sleeping Bag
+This program will allow the user to change whether an object added to the list is packed or not|Tent: Packed| Packed
 
 ## Known Bugs
 
@@ -50,4 +54,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *MIT License*
 
-Copyright (c) 2020 **_Ben White_**
+Copyright (c) 2020 **_Ben White, Kevin Davis & Beverly Potts_**
