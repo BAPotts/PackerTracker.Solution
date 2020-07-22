@@ -32,22 +32,9 @@ namespace PackerTracker.Tests
     [TestMethod]
     public void GetAll_AddsItemtoList_List()
     { 
-      List<Item> _items = new List<Item> {};
-      List<Item> result = Item.GetAll();
-      // Item newItem = new Item("Tent", 5, true);
+      List<Item> _items = new List<Item> {}; // instantiates an empty list
+      List<Item> result = Item.GetAll(); // instantiates a list with whatever items have been created with the item class
       CollectionAssert.AreEqual(_items, result);
     }
   }
 }
-
-// public void GetAll_ReturnsEmptyList_ItemList()
-// {
-//   // Arrange
-//   List<Item> newList = new List<Item> { };
-
-//   // Act
-//   List<Item> result = Item.GetAll();
-
-//   // Assert
-//   CollectionAssert.AreEqual(newList, result);
-// }
